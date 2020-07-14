@@ -1,0 +1,39 @@
+com.apple.BluetoothAudioAgent:
+  # Improve bluetooth audio quality
+  "Apple Bitpool Min (editable)": 40
+com.apple.commerce:
+  # Turn on app auto-update
+  AutoUpdate: true
+com.apple.desktopservices:
+  # Avoid creating .DS_Store files on network or USB volumes
+  DSDontWriteNetworkStore: true
+  DSDontWriteUSBStores: true
+com.apple.dock:
+  # Don’t automatically rearrange Spaces based on most recent use
+  mru-spaces: false
+  # Automatically hide and show the Dock
+  autohide: true
+com.apple.finder:
+  # Use list view in all Finder windows by default
+  # Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
+  FXPreferredViewStyle: "Nlsv"
+com.apple.ImageCapture:
+  # Prevent Photos from opening automatically when devices are plugged in
+  disableHotPlug: true
+com.apple.SoftwareUpdate:
+  # Enable the automatic update check
+  AutomaticCheckEnabled: true
+  # Check for software updates daily, not just once per week
+  ScheduleFrequency: 1
+  # Download newly available updates in background
+  AutomaticDownload: 1
+NSGlobalDomain:
+  # Expand save dialog by default
+  NSNavPanelExpandedStateForSaveMode: true
+  NSNavPanelExpandedStateForSaveMode2: true
+  # Expand print dialog by default
+  PMPrintingExpandedStateForPrint: true
+  PMPrintingExpandedStateForPrint2: true
+  # Enable subpixel font rendering on non-Apple LCDs
+  # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
+  AppleFontSmoothing: 1

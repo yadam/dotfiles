@@ -1,0 +1,15 @@
+tap "getantibody/tap"
+tap "homebrew/bundle"
+tap "homebrew/core"
+
+brew "awscli"
+brew "coreutils"
+brew "git"
+brew "gnupg"
+brew "jq"
+brew "yarn"
+brew "getantibody/tap/antibody"
+
+# cask "firefox"
+# cask "google-chrome"
+# cask "iterm2"

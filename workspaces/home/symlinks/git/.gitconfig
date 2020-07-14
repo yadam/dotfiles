@@ -5,3 +5,5 @@
 	email = 24380+yadam@users.noreply.github.com
 [alias]
 	publish = !git push --set-upstream origin `git symbolic-ref --short HEAD`
+[pull]
+	rebase = false

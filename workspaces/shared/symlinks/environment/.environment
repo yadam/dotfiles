@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/adambantly/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_DISABLE_COMPFIX=true
 
 # NVM Config
 export NVM_DIR="$HOME/.nvm"

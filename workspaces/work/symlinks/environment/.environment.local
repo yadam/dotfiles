@@ -1,3 +1,9 @@
+# Mapistry CLI
+# Use absolute path, `~/` won't work if you choose to use aliases
+export MAPISTRY_HOME='/Users/adam/mapistry'
+export MAPISTRY_DEV_EMAIL='adam.bantly@mapistry.com'
+export MAPISTRY_DEV_NAME='Adam Bantly'
+
 # AWS Config
 export AWS_REGION="us-west-2"
 export AWS_SDK_LOAD_CONFIG="1"
@@ -29,13 +35,13 @@ function awsmfa() {
     unset AWS_ACCESS_KEY_ID
     unset AWS_SECRET_ACCESS_KEY
     unset AWS_SESSION_TOKEN
-    
+
     # default profile used by aws cli
     export AWS_PROFILE=$aws_profile
 
     # default aws region required by many resources
     export AWS_DEFAULT_REGION=us-west-2
-    
+
     # fetch the temporary credentials
     # token-code is what you get from your MFA (virtual device) like Google/Microsoft Authenticator
     session=$(aws sts get-session-token --serial-number $mfa_arn --token-code $1)
@@ -44,18 +50,8 @@ function awsmfa() {
     export AWS_ACCESS_KEY_ID=$(echo $session | jq -r .Credentials.AccessKeyId)
     export AWS_SECRET_ACCESS_KEY=$(echo $session | jq -r .Credentials.SecretAccessKey)
     export AWS_SESSION_TOKEN=$(echo $session | jq -r .Credentials.SessionToken)
-    
+
     # unset the default profile so it doesn't override the env variables we just set
     unset AWS_PROFILE
   fi
 }
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/adambantly/ns8/ns8-salesforcecommerce-switchboard/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/adambantly/ns8/ns8-salesforcecommerce-switchboard/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/adambantly/ns8/ns8-salesforcecommerce-switchboard/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/adambantly/ns8/ns8-salesforcecommerce-switchboard/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/adambantly/ns8/ns8-salesforcecommerce-switchboard/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/adambantly/ns8/ns8-salesforcecommerce-switchboard/node_modules/tabtab/.completions/slss.zsh

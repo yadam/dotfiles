@@ -13,6 +13,16 @@ com.apple.dock:
   mru-spaces: false
   # Automatically hide and show the Dock
   autohide: true
+  # Set the icon size of the dock items
+  tilesize: 30
+  # Turn on the dock magnification
+  magnification: true
+  # Set the magnified icon size of the dock items
+  largesize: 70
+  # Minimize windows to their app icon
+  minimize-to-application: true
+  # Show indicator lights for open applications
+  show-process-indicators: true
 com.apple.finder:
   # Use list view in all Finder windows by default
   # Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
@@ -20,6 +30,8 @@ com.apple.finder:
 com.apple.ImageCapture:
   # Prevent Photos from opening automatically when devices are plugged in
   disableHotPlug: true
+com.apple.menuextra.battery:
+  ShowPercent: true
 com.apple.SoftwareUpdate:
   # Enable the automatic update check
   AutomaticCheckEnabled: true

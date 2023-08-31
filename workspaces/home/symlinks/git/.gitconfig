@@ -7,3 +7,5 @@
 	publish = !git push --set-upstream origin `git symbolic-ref --short HEAD`
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main

@@ -1,8 +1,0 @@
-tap "heroku/brew"
-
-brew "imagemagick"
-brew "heroku"
-brew "vagrant"
-
-cask "virtualbox"
-cask "virtualbox-extension-pack"

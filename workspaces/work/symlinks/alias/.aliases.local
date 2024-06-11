@@ -1,0 +1,36 @@
+function update-platform-dev() {
+  echo "ℹ️  Pulling..."
+  pushd ~/dev/platform-dev
+  git checkout master
+  git pull
+
+  echo "ℹ️  Updating dependencies..."
+  go mod vendor
+
+  echo "ℹ️  Making..."
+  make up-quick
+
+  popd
+
+  echo ✅ Done
+}
+
+function update-modules() {
+  echo "ℹ️  Pulling..."
+  pushd ~/dev/frontend
+  git checkout main
+  git pull
+
+  echo "ℹ️  Updating submodules..."
+  npm run update-submodules
+
+  echo "ℹ️  Installing dependencies..."
+  npm ci
+
+  echo "ℹ️  Generating types..."
+  npm run generate-types
+
+  popd
+  
+  echo ✅ Done
+}

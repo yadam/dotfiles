@@ -15,6 +15,26 @@ function update-platform-dev() {
   echo ✅ Done
 }
 
+function clean-platform-dev() {
+  echo "ℹ️  Cleaning..."
+  pushd ~/dev/platform-dev
+  docker system prune --all --volumes
+
+  update-platform-dev
+
+  popd
+}
+
+function nuke-platform-dev() {
+  echo "ℹ️  Nuking..."
+  pushd ~/dev/platform-dev
+  make teardown setup
+
+  clean-platform-dev
+
+  popd
+}
+
 function update-modules() {
   echo "ℹ️  Pulling..."
   pushd ~/dev/frontend

@@ -18,7 +18,7 @@ function update-platform-dev() {
 function clean-platform-dev() {
   echo "ℹ️  Cleaning..."
   pushd ~/dev/platform-dev
-  docker system prune --all --volumes
+  docker system prune --all --volumes --force
 
   update-platform-dev
 

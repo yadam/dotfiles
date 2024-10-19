@@ -2,7 +2,7 @@
 	helper = osxkeychain
 [user]
 	name = Adam Bantly
-	email = adam.bantly@moov.io
+	email = adam.bantly@homee.com
 [alias]
 	publish = !git push --set-upstream origin `git symbolic-ref --short HEAD`
 [pull]

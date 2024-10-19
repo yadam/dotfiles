@@ -9,6 +9,7 @@ brew "git"
 brew "gnupg"
 brew "jq"
 
+cask "1password"
 cask "clipy"
 cask "firefox"
 cask "google-chrome"

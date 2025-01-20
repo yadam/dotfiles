@@ -1,0 +1,47 @@
+function mono:lint() {
+  echo "ℹ️  Linting..."
+
+  pushd ~/GitLab/mono
+
+  pnpm nx affected --target=lint --base=develop
+
+  popd
+
+  echo "✅ Done"
+}
+
+function mono:test() {
+  echo "ℹ️  Running tests..."
+
+  pushd ~/GitLab/mono
+
+  pnpm nx affected:test --base=develop
+
+  popd
+
+  echo "✅ Done"
+}
+
+function mono:test:all() {
+  echo "ℹ️  Running all tests..."
+
+  pushd ~/GitLab/mono
+
+  pnpm nx run-many --all --target=test
+
+  popd
+
+  echo "✅ Done"
+}
+
+function mono:typecheck() {
+  echo "ℹ️  Checking..."
+
+  pushd ~/GitLab/mono
+
+  pnpm nx affected --target=typecheck --base=develop
+
+  popd
+
+  echo "✅ Done"
+}

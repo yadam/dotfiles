@@ -1,3 +1,6 @@
 brew 'awscli'
+brew 'mongosh'
 
 cask 'loom'
+cask 'mongodb-compass'
+cask 'thebrowsercompany-dia'

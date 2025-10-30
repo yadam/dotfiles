@@ -2,8 +2,10 @@
 	helper = osxkeychain
 [user]
 	name = Adam Bantly
-	email = adam.bantly@homee.com
+	email = adam.bantly@webflow.com
 [alias]
 	publish = !git push --set-upstream origin `git symbolic-ref --short HEAD`
 [pull]
 	rebase = false
+[core]
+	hooksPath = /Users/adam/Library/Application Support/ggshield/git-hooks

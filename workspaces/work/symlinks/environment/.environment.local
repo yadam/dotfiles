@@ -1,0 +1,11 @@
+export AWS_PROFILE="dev-publish-only"
+export AWS_DEFAULT_REGION="us-east-1"
+export AWS_REGION="${AWS_DEFAULT_REGION}"
+export AWS_SDK_LOAD_CONFIG=1
+
+### WF Monorepo shell aliases (DO NOT EDIT)
+WF_ROOT="$HOME/dev/webflow"
+if [ -f "$WF_ROOT/ops/wfdev-aliases.zsh" ]; then
+source "$WF_ROOT/ops/wfdev-aliases.zsh"
+fi
+### END WF

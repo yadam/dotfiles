@@ -1,1 +1,9 @@
-cask "zoom"
+tap 'buildkite/buildkite'
+
+brew 'awscli'
+brew 'mongosh'
+
+cask 'buildkite/buildkite/buildkite-mcp-server'
+cask 'loom'
+cask 'mongodb-compass'
+cask 'thebrowsercompany-dia'

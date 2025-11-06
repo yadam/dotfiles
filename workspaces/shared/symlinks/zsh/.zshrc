@@ -20,3 +20,5 @@ source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load # This loads nvm bash_completion
+
+# autoload -Uz promptinit && promptinit && prompt common

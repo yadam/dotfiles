@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "nx-mcp": {
+      "url": "http://localhost:9998/sse"
+    },
+    "wflow-build-pipeline-cipp": {
+      "command": "npx",
+      "args": [
+        "ts-node",
+        "./ops/cipp-mcp/src/index.ts"
+      ],
+      "env": {
+        "CIPP_MCP_BUILDKITE_TOKEN": "csb_v1_aU46MxZeOhVHguxF4d31pu_8KvbDbfEJiDdW1eji8sM"
+      }
+    },
+    "buildkite": {
+      "url": "https://mcp.buildkite.com/mcp/readonly"
+    },
+    "unblocked": {
+      "command": "/Users/adam/.unblocked/agent/node/bin/node",
+      "args": [
+        "/Applications/Unblocked.app/Contents/Resources/cli/server.js",
+        "--client",
+        "mcpCursor"
+      ]
+    }
+  }
+}

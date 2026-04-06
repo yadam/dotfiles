@@ -20,3 +20,18 @@ source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load # This loads nvm bash_completion
+
+# Add Oso to Path
+export PATH="$HOME/.local/bin:$PATH"
+
+# Add Oso to Path
+export PATH="$HOME/.local/bin:$PATH"
+
+# Add Oso to Path
+export PATH="$HOME/.local/bin:$PATH"
+
+# Add Oso to Path
+export PATH="$HOME/.local/bin:$PATH"
+
+# Add Oso to Path
+export PATH="$HOME/.local/bin:$PATH"

@@ -1,0 +1,10 @@
+# Buildkite Configuration for Webflow
+# Used by Cursor/AI assistants for CI queries
+
+org_slug=webflow
+pipeline_slug=ci-plus-plus
+
+# Other useful pipelines:
+# - webflow-deploy: Deployment pipeline
+# - webflow-smoke-tests: Smoke tests
+# - webflow-build: Build pipeline

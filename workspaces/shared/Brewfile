@@ -1,26 +1,27 @@
-tap "oven-sh/bun"
+tap "manaflow-ai/cmux"
+tap "oven-sh/bun", trusted: true
 
 brew "antidote"
-brew "oven-sh/bun/bun"
+brew "oven-sh/bun/bun", trusted: true
 brew "coreutils"
 brew "gh"
 brew "git"
 brew "gnupg"
 brew "jq"
 
-cask "1password"
-cask "appcleaner"
-cask "arc"
-cask "clipy"
-cask "cursor"
-cask "firefox"
-cask "ghostty"
-cask "google-chrome"
-cask "ipvanish-vpn"
-cask "moom"
-cask "orbstack"
-cask "slack"
-cask "the-unarchiver"
-cask "visual-studio-code"
-cask "warp"
-cask "zen"
+cask "1password", trusted: true
+cask "appcleaner", trusted: true
+cask "arc", trusted: true
+cask "clipy", trusted: true
+cask "cmux", trusted: true
+cask "cursor", trusted: true
+cask "firefox", trusted: true
+cask "ghostty", trusted: true
+cask "google-chrome", trusted: true
+cask "moom", trusted: true
+cask "orbstack", trusted: true
+cask "raycast", trusted: true
+cask "slack", trusted: true
+cask "the-unarchiver", trusted: true
+cask "visual-studio-code", trusted: true
+cask "zen", trusted: true

@@ -1,4 +1,4 @@
-lukechilds/zsh-nvm
+getantidote/use-omz
 molovo/tipz
 ntnyq/omz-plugin-bun
 ntnyq/omz-plugin-pnpm
@@ -6,6 +6,6 @@ ohmyzsh/ohmyzsh path:plugins/command-not-found
 ohmyzsh/ohmyzsh path:plugins/git
 ohmyzsh/ohmyzsh path:plugins/yarn
 rupa/z
-trystan2k/zsh-npm-plugin
+spaceship-prompt/spaceship-prompt
 zdharma/fast-syntax-highlighting
 zsh-users/zsh-completions

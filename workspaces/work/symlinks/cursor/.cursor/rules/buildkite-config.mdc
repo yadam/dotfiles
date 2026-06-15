@@ -1,0 +1,36 @@
+---
+description: Buildkite CI configuration for the webflow monorepo
+alwaysApply: true
+---
+
+# Buildkite Configuration
+
+When using Buildkite MCP tools (`user-buildkite` server), load the configuration from `~/.cursor/buildkite-config`:
+
+```
+org_slug=webflow
+pipeline_slug=ci-plus-plus
+```
+
+## Common Operations
+
+### Check build status for current branch
+```
+list_builds with branch: "<current-branch>", org_slug: "webflow", pipeline_slug: "ci-plus-plus"
+```
+
+### Get failed job details
+```
+get_build with build_number, job_state: "failed,broken"
+```
+
+### Read job logs
+```
+read_logs or tail_logs with job_id from the failed job
+```
+
+## Other Pipelines
+
+- `webflow-deploy` - Deployment pipeline
+- `webflow-smoke-tests` - Smoke tests
+- `webflow-build` - Build pipeline

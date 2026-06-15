@@ -1,5 +1,5 @@
 tap "manaflow-ai/cmux"
-tap "oven-sh/bun"
+tap "oven-sh/bun", trusted: true
 
 brew "antidote"
 brew "oven-sh/bun/bun", trusted: true

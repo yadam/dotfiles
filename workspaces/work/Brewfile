@@ -1,6 +1,6 @@
 brew 'awscli'
 brew 'mongosh'
 
-cask 'claude-code@latest'
-cask 'loom'
-cask 'mongodb-compass'
+cask 'claude-code@latest', trusted: true
+cask 'loom', trusted: true
+cask 'mongodb-compass', trusted: true

@@ -23,15 +23,3 @@ antidote load # This loads nvm bash_completion
 
 # Add Oso to Path
 export PATH="$HOME/.local/bin:$PATH"
-
-# Add Oso to Path
-export PATH="$HOME/.local/bin:$PATH"
-
-# Add Oso to Path
-export PATH="$HOME/.local/bin:$PATH"
-
-# Add Oso to Path
-export PATH="$HOME/.local/bin:$PATH"
-
-# Add Oso to Path
-export PATH="$HOME/.local/bin:$PATH"

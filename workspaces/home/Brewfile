@@ -1,1 +1,4 @@
+cask "codex"
+cask "codex-app"
 cask "ipvanish-vpn"
+cask "steam"

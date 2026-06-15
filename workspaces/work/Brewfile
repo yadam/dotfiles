@@ -1,9 +1,6 @@
-tap 'buildkite/buildkite'
-
 brew 'awscli'
 brew 'mongosh'
 
-cask 'buildkite/buildkite/buildkite-mcp-server'
-cask 'loom'
-cask 'mongodb-compass'
-cask 'thebrowsercompany-dia'
+cask 'claude-code@latest', trusted: true
+cask 'loom', trusted: true
+cask 'mongodb-compass', trusted: true

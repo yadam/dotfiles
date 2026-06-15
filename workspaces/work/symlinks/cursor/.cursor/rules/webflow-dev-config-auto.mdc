@@ -1,0 +1,28 @@
+---
+description: Webflow development configuration including server restart times, Cypress commands, and Buildkite settings
+globs: *.ts, *.tsx, *.spec.ts, *.cy.ts
+alwaysApply: true
+---
+
+# Webflow Development Configuration
+
+When working on this codebase, refer to the development configuration file at `~/.cursor/webflow-dev-config.md` for:
+
+- **Server restart times**: Changes to server-rendered files require 1-2 minutes for the dev server to restart
+- **Cypress test commands**: How to run specific tests, headed mode, etc.
+- **Buildkite configuration**: org_slug and pipeline_slug for CI builds
+- **Jest test commands**: How to run unit tests
+
+## Quick Reference
+
+### After editing server-rendered code
+Wait 1-2 minutes for the dev server to restart before running Cypress tests. The user will confirm when ready.
+
+### Run Cypress tests
+```bash
+npm run cypress-run -- --spec "path/to/test.spec.ts"
+```
+
+### Buildkite
+- org_slug: `webflow`
+- pipeline_slug: `webflow`

@@ -1,0 +1,7 @@
+theme = Monokai Pro
+font-feature = -calt, -liga, -dlig
+window-height = 500
+window-width = 100
+window-position-x = 1000
+window-position-y = 0
+window-save-state = always

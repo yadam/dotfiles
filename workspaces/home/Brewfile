@@ -1,0 +1,4 @@
+cask "codex", trusted: true
+cask "codex-app", trusted: true
+cask "ipvanish-vpn", trusted: true
+cask "steam", trusted: true

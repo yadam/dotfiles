@@ -1,4 +1,8 @@
+brew "ffmpeg", trusted: true
+
+cask "audacity", trusted: true
 cask "codex", trusted: true
 cask "codex-app", trusted: true
 cask "ipvanish-vpn", trusted: true
+cask "obs", trusted: true
 cask "steam", trusted: true

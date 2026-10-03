@@ -1,4 +1,4 @@
-tap "manaflow-ai/cmux"
+tap "manaflow-ai/cmux", trusted: true
 tap "oven-sh/bun", trusted: true
 
 brew "antidote"
@@ -25,3 +25,4 @@ cask "slack", trusted: true
 cask "the-unarchiver", trusted: true
 cask "visual-studio-code", trusted: true
 cask "zen", trusted: true
+cask "zoom", trusted: true

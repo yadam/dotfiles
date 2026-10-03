@@ -1,0 +1,4 @@
+interface:
+  display_name: "TypeScript quality"
+  short_description: "Type safety and review checks beyond Biome"
+  default_prompt: "Use $typescript-quality to implement or review this TypeScript change, apply relevant framework checks, and report gaps beyond automated tooling."

@@ -15,7 +15,8 @@ Codex's workspace dependency tool. The runtime last used was:
 ~/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3
 ```
 
-Use that runtime if it still exists and has the dependencies. If `rawpy` is
+Expand the home-relative path before assigning it to `camera_python`. Use that
+runtime if it still exists and has the dependencies. If `rawpy` is
 missing, install it into a temporary, isolated dependency directory using that
 runtime's `pip --target`, then pass the directory through `PYTHONPATH`. Do not
 install packages globally or assume last session's temporary directory survives.

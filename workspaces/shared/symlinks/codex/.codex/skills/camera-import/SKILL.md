@@ -6,8 +6,9 @@ description: Import new DSLR NEF and JPEG photos from an inserted SD card into A
 # Camera import
 
 Import all photos not previously imported, regardless of capture date. The default
-project is `~/Pictures/camera companion`. Honor an explicit destination
-or scope override in the current request.
+project is `~/Pictures/camera companion`. Set `camera_project_dir` to the expanded
+home-relative path. Honor an explicit destination or scope override in the
+current request.
 
 Keep card originals and local NEFs. Never upload NEFs to Camera Uploads. Preserve
 camera JPEGs as supplied by the camera. A requested import authorizes this workflow

@@ -1,0 +1,8 @@
+[Color Management]
+OutputProfile=RTv4_sRGB
+
+[Resize]
+Enabled=false
+
+[MetaData]
+Mode=0

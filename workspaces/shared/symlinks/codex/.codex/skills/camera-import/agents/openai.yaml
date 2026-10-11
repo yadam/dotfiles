@@ -1,0 +1,4 @@
+interface:
+  display_name: "Camera import"
+  short_description: "Import camera photos and archive them to Dropbox"
+  default_prompt: "Use $camera-import to import new photos from my SD card, match NEF/JPG pairs, convert missing JPEGs and lossless DNGs, and upload the results to Dropbox."

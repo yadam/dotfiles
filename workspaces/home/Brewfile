@@ -1,8 +1,13 @@
+tap "adam/local", "file://#{File.expand_path("~/.dotfiles")}"
+
 brew "ffmpeg", trusted: true
 
 cask "audacity", trusted: true
 cask "codex", trusted: true
 cask "codex-app", trusted: true
+cask "adam/local/darktable", trusted: true
+cask "adam/local/digikam", trusted: true
 cask "ipvanish-vpn", trusted: true
 cask "obs", trusted: true
+cask "rawtherapee", trusted: true
 cask "steam", trusted: true
